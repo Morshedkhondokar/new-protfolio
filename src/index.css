@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@plugin "daisyui" ;
+
+
+*{
+     font-family: "Roboto", sans-serif;
+}
+
+.active{
+     background: #cc1150;
+}
+
+
+
+
+/* animation for banner img */
+.float-shadow {
+  animation: float-shadow 4s ease-in-out infinite;
+}
+
+/* Floating + Shadow animation */
+@keyframes float-shadow {
+  0%, 100% {
+    transform: translateY(0);
+    box-shadow: 0 0 10px rgba(204,17,80,0.3);
+    opacity: 0.7;
+  }
+  50% {
+    transform: translateY(-15px);
+    box-shadow: 0 0 30px rgba(204,17,80,0.5);
+    opacity: 1;
+  }
+}
+
+
+/* start hover btnIo */
+/* From Uiverse.io by nikk7007 */ 
+.btnIo {
+ --color: #cc1150;
+ --color2: rgb(10, 25, 30);
+ padding: 0.4em 1em;
+ background-color: transparent;
+ border-radius: 6px;
+ border: 2px solid var(--color);
+ transition: .5s;
+ position: relative;
+ overflow: hidden;
+ cursor: pointer;
+ z-index: 1;
+ font-weight: 800;
+ border-radius: 12px;
+ font-family: 'Roboto', 'Segoe UI', sans-serif;
+ text-transform: uppercase;
+ color: var(--color);
+}
+
+.btnIo::after, .btnIo::before {
+ content: '';
+ display: block;
+ height: 100%;
+ width: 100%;
+ transform: skew(90deg) translate(-50%, -50%);
+ position: absolute;
+ inset: 50%;
+ left: 25%;
+ z-index: -1;
+ transition: .5s ease-out;
+ background-color: var(--color);
+}
+
+.btnIo::before {
+ top: -50%;
+ left: -25%;
+ transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btnIo:hover::before {
+ transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btnIo:hover::after {
+ transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btnIo:hover {
+ color: white;
+}
+
+.btnIo:active {
+ filter: brightness(.7);
+ transform: scale(.98);
+}
+/* end hover btnIo1 */
+
+
+
+/* start hover btnIo2 */
+     /* From Uiverse.io by Abdulahuwu1 */ 
+.btnIo2 {
+  --color: #ffffff;
+  --color2: #cc1150;
+   padding: 0.6em 1em;
+  background-color: #cc1150;
+  transition: 4s;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 1;
+  font-weight: 800;
+  border-radius: 12px;
+  text-transform: uppercase;
+  color: var(--color);
+}
+
+.btnIo2::after,
+.btnIo2::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  transform: skew(90deg) translate(-50%, -50%);
+  position: absolute;
+  inset: 50%;
+  left: 25%;
+  z-index: -1;
+  transition: 0.5s ease-out;
+  background-color: var(--color);
+}
+
+.btnIo2::before {
+  top: -50%;
+  left: -25%;
+  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btnIo2:hover::before {
+  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+}
+
+.btnIo2:hover::after {
+  transform: skew(45deg) translate(-50%, -50%);
+}
+
+.btnIo2:hover {
+  color: var(--color2);
+}
+
+.btnIo2:active {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}
+
+/* end hover btnIo2 */
+
