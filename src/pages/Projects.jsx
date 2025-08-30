@@ -1,9 +1,10 @@
-import React from 'react';
+
+import MyProjects from '../Components/MyProjects'
 
 const Projects = () => {
     return (
         <div>
-            <h1>Projects</h1>
+            <MyProjects/>
         </div>
     );
 };
