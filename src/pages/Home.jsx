@@ -1,5 +1,6 @@
 import BannerContent from "../Components/BannerContent";
 import BannerImg from "../Components/BannerImg";
+import Skills from "./Skills";
 import About from "./About";
 
 const Home = () => {
@@ -12,6 +13,8 @@ const Home = () => {
       </div>
       {/* About me */}
       <About />
+      {/* skills */}
+      <Skills/>
     </div>
   );
 };
