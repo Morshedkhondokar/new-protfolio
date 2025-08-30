@@ -32,7 +32,7 @@
   }
   50% {
     transform: translateY(-15px);
-    box-shadow: 0 0 30px rgba(204,17,80,0.5);
+    box-shadow: 0 0 30px rgba(204,17,80,0.9);
     opacity: 1;
   }
 }
@@ -43,7 +43,7 @@
 .btnIo {
  --color: #cc1150;
  --color2: rgb(10, 25, 30);
- padding: 0.4em 1em;
+ padding: 0.5em 1em;
  background-color: transparent;
  border-radius: 6px;
  border: 2px solid var(--color);

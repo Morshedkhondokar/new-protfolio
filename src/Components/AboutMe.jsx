@@ -15,7 +15,7 @@ const AboutMe = () => {
           </p>
 
           <div className="flex gap-4 flex-wrap">
-            <button className="btnIo2 bg-[#cc1150]">My Work</button>
+            {/* <button className="btnIo2 bg-[#cc1150]">My Work</button> */}
             <button className="btnIo border-[#cc1150] text-[#cc1150] bg-white">
               Contact Me
             </button>

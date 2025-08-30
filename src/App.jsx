@@ -5,6 +5,7 @@ import AOS from "aos";
 import { useEffect } from "react";
 import 'hover.css/css/hover-min.css';
 import Footer from "./Components/Footer";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
   useEffect(() => {
@@ -13,6 +14,7 @@ function App() {
 
   return (
     <div className="max-w-7xl mx-auto overflow-x-hidden">
+      <ScrollToTop/>
       <Navbar />
       <Outlet />
       <Footer/>

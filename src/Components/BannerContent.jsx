@@ -1,6 +1,7 @@
 import { Typewriter } from "react-simple-typewriter";
 import "animate.css";
 import SocialIcons from "./SocialIcons";
+import { Link } from "react-router";
 
 
 const BannerContent = () => {
@@ -44,7 +45,7 @@ const BannerContent = () => {
 
       {/* CTA Buttons */}
       <div data-aos="fade-up" data-aos-delay="600" className="flex gap-4 flex-wrap">
-        <button className="btnIo2 bg-[#cc1150]">View Projects</button>
+       <Link to={'/projects'}> <button className="btnIo2 bg-[#cc1150]">View Projects</button></Link>
         <button className="btnIo border-[#cc1150] text-[#cc1150] bg-base-200">Download CV</button>
       </div>
       {/* social icons */}
