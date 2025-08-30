@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 import { useEffect } from "react";
 import 'hover.css/css/hover-min.css';
+import Footer from "./Components/Footer";
 
 function App() {
   useEffect(() => {
@@ -14,7 +15,7 @@ function App() {
     <div className="max-w-7xl mx-auto overflow-x-hidden">
       <Navbar />
       <Outlet />
-      
+      <Footer/>
     </div>
   );
 }

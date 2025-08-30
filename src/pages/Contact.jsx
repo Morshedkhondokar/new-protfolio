@@ -1,9 +1,10 @@
 import React from 'react';
+import ContactForm from '../Components/ContactForm';
 
 const Contact = () => {
     return (
-        <div>
-            <h1>Contact</h1>
+        <div className='w-11/12 mx-auto my-12'>
+            <ContactForm/>
         </div>
     );
 };

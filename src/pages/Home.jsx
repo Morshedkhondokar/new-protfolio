@@ -3,6 +3,7 @@ import BannerImg from "../Components/BannerImg";
 import Skills from "./Skills";
 import About from "./About";
 import Projects from './Projects'
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -18,6 +19,8 @@ const Home = () => {
       <Skills/>
       {/* Projects */}
       <Projects/>
+      {/* Contact */}
+      <Contact/>
     </div>
   );
 };
